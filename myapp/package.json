@@ -1,0 +1,27 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "My node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gui25/devexperiment.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Guilherme Bernardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gui25/devexperiment/issues"
+  },
+  "homepage": "https://github.com/gui25/devexperiment#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.14"
+  }
+}
