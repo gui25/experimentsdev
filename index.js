@@ -1,7 +1,5 @@
 const express = require('express')
 // const path = require('path')
-var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('database.db');
 
 
 const app = express()
@@ -10,11 +8,7 @@ const PORT = process.env.PORT || 5000
 
 
 
-app.get('/', (req,res) => res.send(
-  db.each('SELECT rowid AS id, info FROM lorem', function(err, row) {
-  console.log(row.id + ': ' + row.info);
-})
-))
+app.get('/', (req,res) => res.send('Hello World!'))
 
 
 
