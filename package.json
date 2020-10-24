@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.14",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "got": "^11.3.0",
