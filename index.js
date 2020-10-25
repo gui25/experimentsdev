@@ -8,9 +8,18 @@ const PORT = process.env.PORT || 5000
 
 let text = '';
 
- db.each('SELECT rowid AS id, info FROM lorem', function(err, row) {
-    text = text + (row.id + ': ' + row.info);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database('database.db');
+
+db.serialize(function() {
+  
+  db.each('SELECT rowid AS id, info FROM lorem', function(err, row) {
+    text = text + row.id + ': ' + row.info;
   });
+
+});
+
+db.close();
 
 app.get('/', (req,res) => res.send(text))
 
