@@ -11,15 +11,14 @@ var fs = require('fs');
 
 app.get('/', (req,res) => res.send(
 
-
     http.createServer(function (req, res) {
         //Open a file on the server and return its content:
-        fs.readFile('demofile1.html', function(err, data) {
-          res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.readFile('db/database.db', function(err, data) {
+          res.writeHead(200, {'Content-Type': 'text/db'});
           res.write(data);
           return res.end();
         });
-      })
+    })
 
 ))
 
