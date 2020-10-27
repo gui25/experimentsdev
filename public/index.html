@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My db rows</title>
+    </head>
+
+    <body>
+        <div id="table"></div>
+
+        <script type="text/javascript">
+             var opts = {
+                 url: 'http://localhost:5000/rows/'
+             };
+
+             fetch(opts)
+                 .then((res) => {
+                     if (res.ok) {
+                         return res.json();
+                     }
+                  })
+                  .then((rows) => {
+                      for (let row of rows) {
+                          // row will be a mysql row -- you can loop over these and do what you want with them
+                      }
+                   })
+                   .catch(console.log);
+        </script>
+    </body> 
+</html>
