@@ -4,7 +4,6 @@ var db = new sqlite3.Database('database.db');
 db.serialize(function() {
 
   db.run('CREATE TABLE IF NOT EXISTS lorem (info TEXT)');
-  var stmt = db.prepare('INSERT INTO lorem VALUES (?)');
 
   
 });
