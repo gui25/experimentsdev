@@ -5,7 +5,7 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 5000
 
-app.get('/about', (req, res) => {
+app.get('/about.ejs', (req, res) => {
     var users = [{
       name: faker.name.findName(),
       email: faker.internet.email(),
@@ -20,7 +20,7 @@ app.get('/about', (req, res) => {
       avatar: 'http://placekitten.com/500/300'
     }]
   
-    res.render('views/pages/about', { usuarios: users })
+    res.render('views/pages/about.ejs', { usuarios: users })
   })
 
 
