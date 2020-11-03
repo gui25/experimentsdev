@@ -1,6 +1,7 @@
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('database.db');
 
+
 db.serialize(function() {
 
     var stmt = db.prepare('INSERT INTO lorem VALUES (?)');
@@ -15,3 +16,6 @@ db.serialize(function() {
 });
 
 db.close();
+
+
+
