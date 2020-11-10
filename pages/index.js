@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import dbjson from 'loop.json';
 
 function Home(){
     return (
         <div>
         <div>Contador</div>
         <Contador />
+        <div>{dbjson}</div>
         </div>
         
         
