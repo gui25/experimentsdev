@@ -1,45 +1,25 @@
 {
-  "name": "js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "12.x"
-  },
+  "name": "experimentsdev",
+  "version": "1.0.0",
+  "description": "Here its a Repository that I will use Node js link: https://experimentsdev.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
-  },
-  "dependencies": {
-    "ejs": "^2.7.4",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
-    "jsonfile": "^6.1.0",
-    "nodemailer": "^6.4.14",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sqlite3": "^5.0.0",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.1.0",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "devDependencies": {
-    "got": "^11.3.0",
-    "tape": "^4.7.0"
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heroku/node-js-getting-started.git"
+    "url": "git+https://github.com/gui25/experimentsdev.git"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heroku/node-js-getting-started/issues"
+    "url": "https://github.com/gui25/experimentsdev/issues"
   },
-  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
-  "author": "Guilherme Bernardo"
+  "homepage": "https://github.com/gui25/experimentsdev#readme",
+  "dependencies": {
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
