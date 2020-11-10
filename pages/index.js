@@ -5,7 +5,6 @@ function Home(){
         <div>
         <div>Contador</div>
         <Contador />
-        
         </div>
         
         
