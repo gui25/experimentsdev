@@ -5,11 +5,37 @@ import axios from 'axios';
 
 export default function Home() {
   const [email, setEmail] = useState('');
+  let flag = 1;
+  let emailcheck = '';
+
 
   function handleSignUpToNewsletter(event: FormEvent) {
     event.preventDefault();
+     
+      if(email == '' || email == null || email == undefined){
 
-    axios.post('/api/subscribe', { email });
+        alert('Escreva um email válido.');
+        
+      } else {
+
+        if(emailcheck == email && flag == 2){
+
+          alert('Não repita');
+
+        } else {
+
+          alert('O e-mail: (' + email  + ') foi cadastrado com sucesso.');
+
+          axios.post('/api/subscribe', { email });
+          emailcheck = email;
+          flag = 2;
+
+        }
+        
+      }
+    
+
+    
   }
 
   return (
