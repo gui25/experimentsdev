@@ -1,27 +1,44 @@
 {
-  "name": "experimentsdev",
-  "version": "1.0.0",
-  "description": "Here its a Repository that I will use Node js link: https://experimentsdev.herokuapp.com/",
-  "main": "index.js",
+  "name": "guilherme_bernardo",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@vercel/node": "^1.8.2",
+    "axios": "^0.20.0",
+    "emotion-theming": "^10.0.27",
+    "mongodb": "^3.6.1",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.5.27",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.46",
+    "typescript": "^3.9.7"
+  },
+  "description": "my next js project",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gui25/experimentsdev.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "web",
+    "dev"
+  ],
+  "author": "Guilherme Bernardo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gui25/experimentsdev/issues"
   },
-  "homepage": "https://github.com/gui25/experimentsdev#readme",
-  "dependencies": {
-    "jsonfile": "^6.1.0",
-    "next": "^10.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sqlite3": "^5.0.0"
-  }
+  "homepage": "https://github.com/gui25/experimentsdev#readme"
 }
