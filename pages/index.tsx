@@ -74,7 +74,7 @@ export default function Home() {
 
         </Text>
 
-        <Text textAlign="center" fontSize={22} color="#1157d6ed" marginBottom={2}>
+        <Text textAlign="center" fontSize={22} color="#6666FF" marginBottom={2}>
           Desenvolvimento Smart 🚀
 
 
