@@ -20,10 +20,6 @@ const customTheme: DefaultTheme = {
   },
   colors: {
     ...theme.colors,
-    purple: {
-      ...theme.colors.purple,
-      500: '#8257e5',
-    },
     gray: {
       ...theme.colors.gray,
       300: '#e1e1e6',
