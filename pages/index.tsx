@@ -20,7 +20,7 @@ export default function Home() {
 
         if(emailcheck == email && flag == 2){
 
-          alert('Não repita');
+          alert('Não faça spam.');
 
         } else {
 
