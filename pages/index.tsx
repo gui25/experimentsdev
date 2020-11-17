@@ -2,11 +2,16 @@ import { useState, FormEvent } from 'react';
 import { Flex, Image, Button, Text } from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
+import ReactDOM from 'react-dom'
 
 export default function Home() {
   const [email, setEmail] = useState('');
   let flag = 1;
   let emailcheck = '';
+  let result = "";
+  
+
+
 
 
   function handleSignUpToNewsletter(event: FormEvent) {
@@ -24,12 +29,16 @@ export default function Home() {
 
         } else {
 
-          alert('O e-mail: (' + email  + ') foi cadastrado com sucesso.');
+          alert("O e-mail:" +  email  + " foi cadastrado com sucesso.");
+
+          result = "O e-mail foi cadastrado com sucesso.";
+          
+       
 
           axios.post('/api/subscribe', { email });
           emailcheck = email;
           flag = 2;
-
+          
         }
         
       }
@@ -44,6 +53,7 @@ export default function Home() {
       height="100vh"
       justifyContent="center"
       alignItems="center"
+      id="form"
     >
       <Flex
         as="form"
@@ -56,6 +66,7 @@ export default function Home() {
         marginTop={4}
         width="100%" 
         maxW="400px"
+        id="content"
       >
 
         <Text textAlign="center" fontSize={37} color="#4d4dff" marginBottom={2}>
@@ -63,7 +74,7 @@ export default function Home() {
 
         </Text>
 
-        <Text textAlign="center" fontSize={22} color="#3655b3" marginBottom={2}>
+        <Text textAlign="center" fontSize={22} color="#3300FF" marginBottom={2}>
           Desenvolvimento Smart 🚀
 
 
@@ -90,6 +101,10 @@ export default function Home() {
         >
           INSCREVER
         </Button>
+
+        <div id="root"></div>
+
+        
       </Flex>
     </Flex>
   )
