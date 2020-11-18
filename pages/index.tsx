@@ -4,40 +4,70 @@ import Input from '../components/Input'
 import axios from 'axios';
 import ReactDOM from 'react-dom'
 
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+} from "@chakra-ui/react"
+
+
+
 export default function Home() {
   const [email, setEmail] = useState('');
-  let flag = 1;
-  let emailcheck = '';
-  let result = "";
+  const [emailcheck, setEmailcheck] = useState('');
+  const [count, setCount] = useState(0);
   
 
+  let message = '';
+  
+  
 
+  
+  const [buttonText, setButtonText] = useState("Next"); 
+  
+  const changeText = (text) => setButtonText(text);
+
+ 
 
 
   function handleSignUpToNewsletter(event: FormEvent) {
-    event.preventDefault();
+      event.preventDefault();
+      setEmailcheck(email);
+     
+      
+      
      
       if(email == '' || email == null || email == undefined){
 
-        alert('Escreva um email válido.');
+        var state = 'Escreva um email válido.';
+        message = state;
+        changeText(message);
         
       } else {
+        
 
-        if(emailcheck == email && flag == 2){
+        if(emailcheck == email && count > 1){
 
-          alert('Não faça spam.');
+          var state = 'Não faça spam.';
+          message = state;
+          changeText(message);
+          setEmailcheck(email);
 
         } else {
-
-          alert("O e-mail:" +  email  + " foi cadastrado com sucesso.");
-
-          result = "O e-mail foi cadastrado com sucesso.";
           
-       
+          setEmailcheck(email);
 
-          axios.post('/api/subscribe', { email });
-          emailcheck = email;
-          flag = 2;
+           var state = 'O e-mail foi cadastrado com sucesso.';
+           message = state;
+           changeText(message);
+           
+           
+           axios.post('/api/subscribe', { email });
           
         }
         
@@ -89,7 +119,12 @@ export default function Home() {
           marginTop={2}
           value={email}
           onChange={e => setEmail(e.target.value)}
+          
+          
         />
+
+        <Popover isLazy>
+          <PopoverTrigger>
 
         <Button
           type="submit"
@@ -98,14 +133,31 @@ export default function Home() {
           borderRadius="sm"
           marginTop={6}
           _hover={{ backgroundColor: '#4d4dff' }}
+          onClick={() => setCount(count + 1)}
+          
+          
+          
         >
           INSCREVER
         </Button>
 
-        <div id="root"></div>
+        </PopoverTrigger>
+          <PopoverContent backgroundColor="#313135">
+            
+            <PopoverBody  >
+            <Button>{buttonText}</Button>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
 
         
-      </Flex>
+
+        
+    </Flex>
+      
+
+        
+     
     </Flex>
   )
 }
