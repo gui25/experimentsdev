@@ -1,6 +1,8 @@
 {
   "name": "Dev Smart 🚀",
   "short_name": "Dev Smart 🚀",
-  "start_url": "https://experimentsdev.vercel.app",
-  "description": "Painel de envio de emails."
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  
 }
