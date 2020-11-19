@@ -42,16 +42,33 @@ export default function Home() {
       
       
      
-      if(email == '' || email == null || email == undefined){
+      if(email == '' || email == null || email == undefined || (email.indexOf(" ") !== -1) == true){
 
-        var state = 'Escreva um email válido.';
-        message = state;
-        changeText(message);
+        if((email.indexOf("@") !== -1) == false){
+
+          var state = 'Escreva um email válido e com @.';
+          message = state;
+          changeText(message);
+
+        } else {
+          var state = 'Escreva um email válido.';
+          message = state;
+          changeText(message);
+        }
+
         
-      } else {
+        
+      } else if((email.indexOf("@") !== -1) == false  ){
+
+        var state = 'Precisa de um @';
+          message = state;
+          changeText(message);
+          setEmailcheck(email);
+
+
+      } else if(emailcheck == email && count > 1){
         
 
-        if(emailcheck == email && count > 1){
 
           var state = 'Não faça spam.';
           message = state;
@@ -71,7 +88,7 @@ export default function Home() {
           
         }
         
-      }
+      
     
 
     
