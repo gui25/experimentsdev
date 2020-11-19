@@ -127,9 +127,9 @@ export default function Home() {
 
         </Text>
 
-        <label textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2} for="inputemail">
+        <HTMLLabelElement textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2} for="inputemail">
           Envie seu e-mail e receba os melhores cursos de programação!
-        </label>
+        </HTMLLabelElement>
 
         <Input
           id="inputemail"
