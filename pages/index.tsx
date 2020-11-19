@@ -126,10 +126,10 @@ export default function Home() {
 
 
         </Text>
-
-        <HTMLLabelElement textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2} for="inputemail">
+         <Label>
+        <Text textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2}>
           Envie seu e-mail e receba os melhores cursos de programação!
-        </HTMLLabelElement>
+        </Text>
 
         <Input
           id="inputemail"
@@ -140,7 +140,7 @@ export default function Home() {
           
           
         />
-
+        </Label>
         <Popover isLazy>
           <PopoverTrigger>
 
