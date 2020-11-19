@@ -58,7 +58,7 @@ export default function Home() {
 
         
         
-      } else if((email.indexOf("@") !== -1) == false){
+      } else if(email == "@" || (email.indexOf("@") !== -1) == false){
 
         var state = 'Precisa de um @';
           message = state;
