@@ -13,6 +13,8 @@ import {
   PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
+  FormControl,
+  FormLabel
 } from "@chakra-ui/react"
 
 
@@ -130,16 +132,19 @@ export default function Home() {
         <Text textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2}>
           Envie seu e-mail e receba os melhores cursos de programação!
         </Text>
+        
+        <FormControl id="email">
+         <FormLabel>Endereço de e-mail</FormLabel>
 
         <Input
-          id="inputemail"
+     
           placeholder="Seu melhor e-mail"
           marginTop={2}
           value={email}
           onChange={e => setEmail(e.target.value)}
-          
-          
+      
         />
+          </FormControl>
         
         <Popover isLazy>
           <PopoverTrigger>
