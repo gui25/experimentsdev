@@ -116,12 +116,12 @@ export default function Home() {
         id="content"
       >
 
-        <Text textAlign="center" fontSize={37} color="#4d4dff" marginBottom={2}>
+        <Text textAlign="center" fontSize={37} color="#8e72ff" marginBottom={2}>
           Guilherme Cursos 
 
         </Text>
 
-        <Text textAlign="center" fontSize={22} color="#6666FF" marginBottom={2}>
+        <Text textAlign="center" fontSize={22} color="#ad9eff" marginBottom={2}>
           Desenvolvimento Smart 🚀
 
 
