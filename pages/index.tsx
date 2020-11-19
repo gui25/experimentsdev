@@ -14,10 +14,8 @@ import {
   PopoverArrow,
   PopoverCloseButton,
   FormControl,
-  FormLabel, 
-  Skeleton, 
-  SkeletonCircle, 
-  SkeletonText
+  FormLabel
+  
 } from "@chakra-ui/react"
 
 
@@ -137,7 +135,7 @@ export default function Home() {
         </Text>
         
         <FormControl id="email">
-         <FormLabel><Skeleton height="20px" /></FormLabel>
+         <FormLabel> </FormLabel>
 
         <Input
      
@@ -147,7 +145,7 @@ export default function Home() {
           onChange={e => setEmail(e.target.value)}
       
         />
-          <FormLabel><Skeleton height="20px" /></FormLabel>
+          <FormLabel> </FormLabel>
           </FormControl>
         
         <Popover isLazy>
