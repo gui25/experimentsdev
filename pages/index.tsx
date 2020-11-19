@@ -24,9 +24,10 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [emailcheck, setEmailcheck] = useState('');
   const [count, setCount] = useState(0);
-  
+  const [repeat, setRepeat] = useState(0);
 
   let message = '';
+  var numcount = 0;
   
   
 
@@ -41,11 +42,11 @@ export default function Home() {
   function handleSignUpToNewsletter(event: FormEvent) {
       event.preventDefault();
       setEmailcheck(email);
-     
+      duplicateCount(email);
       
       
      
-      if(email == '' || email == null || email == undefined || (email.indexOf(" ") !== -1) == true || email == "@"){
+      if(email == '' || email == null || email == undefined || (email.indexOf(" ") !== -1) == true || email == "@" || repeat > 1){
 
         if((email.indexOf("@") !== -1) == false){
 
@@ -95,6 +96,29 @@ export default function Home() {
     
 
     
+  }
+
+
+  function duplicateCount(string) {
+
+    var array = [];
+    array = string.split('');
+    
+
+    
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] == "@") {
+        numcount = numcount + 1;
+        
+        
+      } else {
+        
+      }
+
+    }    
+
+    setRepeat(numcount);
+  
   }
 
   return (
@@ -159,6 +183,7 @@ export default function Home() {
           marginTop={6}
           _hover={{ backgroundColor: '#4d4dff' }}
           onClick={() => setCount(count + 1)}
+          
           
           
           
