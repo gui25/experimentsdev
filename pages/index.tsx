@@ -127,11 +127,12 @@ export default function Home() {
 
         </Text>
 
-        <Text textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2}>
+        <label textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2} for="inputemail">
           Envie seu e-mail e receba os melhores cursos de programação!
-        </Text>
+        </label>
 
         <Input
+          id="inputemail"
           placeholder="Seu melhor e-mail"
           marginTop={2}
           value={email}
