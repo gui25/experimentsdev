@@ -45,7 +45,7 @@ export default function Home() {
       
       
      
-      if(email == '' || email == null || email == undefined || (email.indexOf(" ") !== -1) == true){
+      if(email == '' || email == null || email == undefined || (email.indexOf(" ") !== -1) == true || email == "@"){
 
         if((email.indexOf("@") !== -1) == false){
 
@@ -61,7 +61,7 @@ export default function Home() {
 
         
         
-      } else if(email == "@" || (email.indexOf("@") !== -1) == false){
+      } else if((email.indexOf("@") !== -1) == false){
 
         var state = 'Precisa de um @';
           message = state;
