@@ -14,6 +14,7 @@ class MyDocument extends Document<DocumentProps> {
           
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" /> 
           <link rel="shortcut icon" type="image/png" href="https://gui25.github.io/main/favicon.png" /> 
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
