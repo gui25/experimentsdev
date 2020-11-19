@@ -6,7 +6,7 @@ import Document, { DocumentProps, Html, Head, Main, NextScript } from 'next/docu
 class MyDocument extends Document<DocumentProps> {
   render(): JSX.Element {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
           <title>Dev Smart 🚀</title>
           
