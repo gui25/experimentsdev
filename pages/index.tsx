@@ -126,7 +126,7 @@ export default function Home() {
 
 
         </Text>
-         <Label>
+       
         <Text textAlign="center" fontSize="md" color="#a6bcff" marginBottom={2}>
           Envie seu e-mail e receba os melhores cursos de programação!
         </Text>
@@ -140,7 +140,7 @@ export default function Home() {
           
           
         />
-        </Label>
+        
         <Popover isLazy>
           <PopoverTrigger>
 
