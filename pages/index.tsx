@@ -42,7 +42,7 @@ export default function Home() {
   function handleSignUpToNewsletter(event: FormEvent) {
       event.preventDefault();
       setEmailcheck(email);
-      duplicateCount(email);
+      
       
       
      
@@ -118,6 +118,7 @@ export default function Home() {
     }    
 
     setRepeat(numcount);
+    
   
   }
 
@@ -182,7 +183,7 @@ export default function Home() {
           borderRadius="sm"
           marginTop={6}
           _hover={{ backgroundColor: '#4d4dff' }}
-          onClick={() => setCount(count + 1)}
+          onClick={() => {setCount(count + 1) , duplicateCount(email)}}
           
           
           
