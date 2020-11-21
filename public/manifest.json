@@ -2,7 +2,7 @@
   "name": "Dev Smart 🚀",
   "short_name": "Dev Smart 🚀",
   "start_url": "/",
-  "display": "browser",
+  "display": "standalone",
    "icons": [
     {
       "src": "https://gui25.github.io/main/favicon.png",
