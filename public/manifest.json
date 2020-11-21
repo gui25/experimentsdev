@@ -1,5 +1,22 @@
 {
   "name": "Dev Smart 🚀",
   "short_name": "Dev Smart 🚀",
-  "start_url": "/"
+  "start_url": "/",
+  "display": "browser",
+   "icons": [
+    {
+      "src": "https://gui25.github.io/main/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://gui25.github.io/main/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#8E72FF",
+  "background_color": "#121214"
 }

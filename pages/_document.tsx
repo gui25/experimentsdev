@@ -12,7 +12,9 @@ class MyDocument extends Document<DocumentProps> {
           <link rel="manifest" href="/manifest.json" />
           
           <meta name="Description" content="Author: Guilherme Bernardo, Category: Development"/>
-          <link rel="shortcut icon" type="image/png" href="https://gui25.github.io/main/favicon.png" /> 
+          <link rel="shortcut icon" type="image/png" href="https://gui25.github.io/main/favicon.png" />
+          <link rel="apple-touch-icon" href="https://gui25.github.io/main/favicon.png"/>
+          <meta name="theme-color" content="#8E72FF"/>
         </Head>
         <body>
           <Main />
