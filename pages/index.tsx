@@ -1,18 +1,15 @@
 import { useState, FormEvent } from 'react';
-import { Flex, Image, Button, Text } from '@chakra-ui/core'
+import { Flex,  Button, Text } from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
-import ReactDOM from 'react-dom'
 
 import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverHeader,
+
   PopoverBody,
-  PopoverFooter,
-  PopoverArrow,
-  PopoverCloseButton,
+
   FormControl,
   FormLabel
   
@@ -144,12 +141,12 @@ export default function Home() {
         id="content"
       >
 
-        <Text textAlign="center" fontSize={37} color="#8e72ff" marginBottom={2}>
+        <Text textAlign="center" fontSize={37} color="#677ff7" marginBottom={2}>
           Guilherme Cursos 
 
         </Text>
 
-        <Text textAlign="center" fontSize={22} color="#ad9eff" marginBottom={2}>
+        <Text textAlign="center" fontSize={22} color="#a3aeff" marginBottom={2}>
           Desenvolvimento Smart 🚀
 
 
