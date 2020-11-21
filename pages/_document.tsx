@@ -8,6 +8,8 @@ class MyDocument extends Document<DocumentProps> {
     return (
       <Html lang="pt-BR">
         <Head>
+        <title>Dev Smart 🚀</title>
+          <link rel="manifest" href="/manifest.json" />
           
           <meta name="Description" content="Author: Guilherme Bernardo, Category: Development"/>
           <link rel="shortcut icon" type="image/png" href="https://gui25.github.io/main/favicon.png" /> 
