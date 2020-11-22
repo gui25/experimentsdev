@@ -29,8 +29,6 @@ export default async () => {
 
   const collection = db.collection('subscribers');
 
-  alert(collection.find());
-
-  return collection.find();
+  return collection;
 
 }
