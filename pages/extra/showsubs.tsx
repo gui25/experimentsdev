@@ -13,10 +13,12 @@ export default function Home() {
         .then(function (response) {
         // handle success
         console.log(response);
+        alert(response);
         })
         .catch(function (error) {
         // handle error
         console.log(error);
+        alert(error);
         })
         .then(function () {
         // always executed
