@@ -8,8 +8,5 @@ export default async (request: NowRequest, response: NowResponse) => {
 
   const collection = db.collection('subscribers');
 
-  await collection.find();
-
-
-  return response.status(201).json({ ok: true });
+  return collection.find();
 }
