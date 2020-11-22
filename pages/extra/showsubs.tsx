@@ -1,8 +1,10 @@
-export default function Hello() {
-    return (
-        <main>
-            <h1>Hello there!</h1>
-            <p>I hope you have a great day. 🙂</p>
-        </main>
-    );
+import { useState, FormEvent } from 'react';
+import { Flex,  Button, Text } from '@chakra-ui/core'
+
+import axios from 'axios';
+
+export default function Home() {
+    axios.get('/api/showsubscribe');
+
+
 }
