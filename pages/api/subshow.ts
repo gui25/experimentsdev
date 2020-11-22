@@ -31,4 +31,6 @@ export default async () => {
 
   alert(collection.find());
 
+  return collection.find();
+
 }
