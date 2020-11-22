@@ -32,8 +32,8 @@ export default function Home() {
 
     return (
         <main>
-            <h1 onClick={list}>Hello there!</h1>
-            <p>I hope you have a great day. 🙂</p>
+            <h1 onClick={() => list()}>Click here!</h1>
+            
         </main>
     );
 }
