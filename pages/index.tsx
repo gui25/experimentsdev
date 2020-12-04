@@ -2,6 +2,7 @@ import { useState, FormEvent } from 'react';
 import { Flex,  Button, Text } from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
+import Link from 'next/link'
 
 import {
   Popover,
@@ -188,7 +189,7 @@ export default function Home() {
         >
           INSCREVER
         </Button>
-        <link href="/pages/extra/showsubs.tsx">
+        <Link href="/pages/extra/showsubs.tsx">
         <Button
 
           backgroundColor="#4d4dff"
@@ -203,7 +204,7 @@ export default function Home() {
         >
           INSCREVER
         </Button>
-        </link>
+        </Link>
 
         </PopoverTrigger>
           <PopoverContent backgroundColor="#313135">
