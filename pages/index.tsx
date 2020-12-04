@@ -188,6 +188,22 @@ export default function Home() {
         >
           INSCREVER
         </Button>
+        <link href="/pages/extra/showsubs.tsx">
+        <Button
+
+          backgroundColor="#4d4dff"
+          height="50px"
+          borderRadius="sm"
+          marginTop={6}
+          _hover={{ backgroundColor: '#4d4dff' }}
+          
+          
+          
+          
+        >
+          INSCREVER
+        </Button>
+        </link>
 
         </PopoverTrigger>
           <PopoverContent backgroundColor="#313135">
